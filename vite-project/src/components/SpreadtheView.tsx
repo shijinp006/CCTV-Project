@@ -40,8 +40,8 @@ export const SpreadTheView = () => {
                   </h2>
                 </div>
               </div>
-              <div className="flex w-full lg:h-[95px]  lg:ml-10 ">
-                <p className="font-poppins font-normal text-[10px] lg:text-[13px] lg:leading-[18px] text-white max-w-2xl text-start">
+              <div className="flex w-full lg:h-[95px]   lg:ml-10  ">
+                <p className="font-poppins font-normal ml-10 lg:ml-0 text-[10px] lg:text-[13px] lg:leading-[18px] text-white max-w-2xl text-start ">
                   Discover the amazing world of 360 cameras! These cool  <br />{" "}
                   devices boost your creativity and help you save money. <br />{" "}
                   With two camera views, you can capture every angle and <br />{" "}

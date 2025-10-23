@@ -41,7 +41,7 @@ export const TopTechTrend = () => {
                 </div>
               </div>
               <div className="flex  w-full lg:h-[95px]  lg:ml-10 ">
-                <p className="font-poppins font-normal text-[10px] lg:text-[13px] lg:leading-[18px] text-white max-w-2xl text-start">
+                <p className="font-poppins ml-10 lg:ml-0 font-normal text-[10px] lg:text-[13px] lg:leading-[18px] text-white max-w-2xl text-start">
                   Stay ahead of the curve with our top tech trends in <br />{" "}
                   camera technology. Our innovative designs combine <br /> style
                   and function, ensuring you always capture the <br /> perfect

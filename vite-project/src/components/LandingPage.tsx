@@ -9,15 +9,14 @@ export const LandingPage = () => {
   return (
     <>
       <div
-        className="relative flex justify-center  w-full min-h-screen bg-center bg-cover"
+        className="relative flex flex-col   w-full min-h-screen bg-center bg-cover"
         style={{
           backgroundImage: `url(${bgImage})`,
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="flex items-center gap-6 sm:gap-8 w-full max-w-7xl px-2 sm:px-6 lg:px-10 mx-auto flex-col">
-          {/* Navigation */}
-          <nav className="flex items-center justify-between lg:h-[72px] w-full mt-8 relative ">
+        <div className="flex   px-4 md:px-6 lg:px-10 max-w-7xl mx-auto w-full lg:mt-10  ">
+          <nav className="flex items-center justify-between lg:h-[72px] w-full  relative ">
             <div className="flex items-center justify-center lg:w-52 lg:h-[60px] lg:ml-50">
               <h1 className="font-poppins font-normal text-[28px] sm:text-[32px] lg:text-[40px] uppercase text-[#F9F9F9]">
                 Sacrosys
@@ -95,9 +94,13 @@ export const LandingPage = () => {
               </button>
             </div>
           </nav>
+        </div>
+
+        <div className="flex items-center justify-center gap-6 sm:gap-8 w-full max-w-7xl px-2 sm:px-6 lg:px-10 mx-auto flex-col ">
+          {/* Navigation */}
 
           {/* Hero Section */}
-          <div className="flex items-center lg:py-12  flex-col w-full lg:w-[774px] lg:h-[273px] gap-4 sm:gap-4 ">
+          <div className="flex items-center lg:py-20 flex-col w-full lg:w-[774px] lg:h-[273px] gap-4 sm:gap-4">
             <div className="lg:w-[774px] lg:h-[180px]">
               <h1 className="font-poppins font-bold text-[24px] sm:text-[28px] lg:text-[30px] capitalize tracking-widest leading-8 sm:leading-10 lg:leading-9">
                 <span className="text-gradient leading-[100%]">
@@ -112,13 +115,13 @@ export const LandingPage = () => {
               </h1>
             </div>
 
-            <div className="flex items-center w-full lg:w-[774px] h-auto gap-1 sm:gap-1 flex-col ">
-              <p className="font-poppins font-normal text-[12px] sm:text-[14px] lg:text-[14px] capitalize text-[#F9F9F9] tracking-widest">
+            <div className="flex w-full lg:w-[774px] h-auto gap-1 sm:gap-1 flex-col   ">
+              <p className="font-poppins  font-normal text-[12px] sm:text-[14px] lg:text-[14px] capitalize text-[#F9F9F9] tracking-widest ">
                 The top CCTV and networking solutions in Dubai are essential for
-                any business owner to consider for their security.
+                any <br /> business owner to consider for their security.
               </p>
               <div
-                className="lg:w-[774px] w-full border border-transparent"
+                className="lg:w-[648px] w-full border border-transparent"
                 style={{
                   borderImageSlice: 1,
                   borderImageSource:

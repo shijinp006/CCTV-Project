@@ -9,7 +9,7 @@ export const LandingPage = () => {
   return (
     <>
       <div
-        className="relative flex justify-center lg:items-center w-full min-h-screen bg-center bg-cover"
+        className="relative flex justify-center  w-full min-h-screen bg-center bg-cover"
         style={{
           backgroundImage: `url(${bgImage})`,
           backgroundRepeat: "no-repeat",
@@ -97,9 +97,9 @@ export const LandingPage = () => {
           </nav>
 
           {/* Hero Section */}
-          <div className="flex items-center flex-col w-full lg:w-[774px] lg:h-[273px] gap-4 sm:gap-4">
+          <div className="flex items-center lg:py-12  flex-col w-full lg:w-[774px] lg:h-[273px] gap-4 sm:gap-4 ">
             <div className="lg:w-[774px] lg:h-[180px]">
-              <h1 className="font-poppins font-bold text-[24px] sm:text-[28px] lg:text-[30px] capitalize tracking-widest leading-8 sm:leading-10 lg:leading-10">
+              <h1 className="font-poppins font-bold text-[24px] sm:text-[28px] lg:text-[30px] capitalize tracking-widest leading-8 sm:leading-10 lg:leading-9">
                 <span className="text-gradient leading-[100%]">
                   Comprehensive{" "}
                 </span>
@@ -112,7 +112,7 @@ export const LandingPage = () => {
               </h1>
             </div>
 
-            <div className="flex items-center w-full lg:w-[774px] h-auto gap-1 sm:gap-1 flex-col">
+            <div className="flex items-center w-full lg:w-[774px] h-auto gap-1 sm:gap-1 flex-col ">
               <p className="font-poppins font-normal text-[12px] sm:text-[14px] lg:text-[14px] capitalize text-[#F9F9F9] tracking-widest">
                 The top CCTV and networking solutions in Dubai are essential for
                 any business owner to consider for their security.

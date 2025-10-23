@@ -9,13 +9,13 @@ export const LandingPage = () => {
   return (
     <>
       <div
-        className="relative flex justify-center w-full min-h-screen bg-center bg-cover"
+        className="relative flex justify-center lg:items-center w-full min-h-screen bg-center bg-cover"
         style={{
           backgroundImage: `url(${bgImage})`,
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="flex items-center gap-6 sm:gap-8 w-full max-w-7xl px-4 sm:px-6 lg:px-10 mx-auto flex-col">
+        <div className="flex items-center gap-6 sm:gap-8 w-full max-w-7xl px-2 sm:px-6 lg:px-10 mx-auto flex-col">
           {/* Navigation */}
           <nav className="flex items-center justify-between lg:h-[72px] w-full mt-8 relative ">
             <div className="flex items-center justify-center lg:w-52 lg:h-[60px] lg:ml-50">
@@ -99,7 +99,7 @@ export const LandingPage = () => {
           {/* Hero Section */}
           <div className="flex items-center flex-col w-full lg:w-[774px] lg:h-[273px] gap-4 sm:gap-4">
             <div className="lg:w-[774px] lg:h-[180px]">
-              <h1 className="font-poppins font-bold text-[28px] sm:text-[32px] lg:text-[35px] capitalize tracking-widest leading-8 sm:leading-10 lg:leading-12">
+              <h1 className="font-poppins font-bold text-[24px] sm:text-[28px] lg:text-[30px] capitalize tracking-widest leading-8 sm:leading-10 lg:leading-10">
                 <span className="text-gradient leading-[100%]">
                   Comprehensive{" "}
                 </span>
@@ -113,7 +113,7 @@ export const LandingPage = () => {
             </div>
 
             <div className="flex items-center w-full lg:w-[774px] h-auto gap-1 sm:gap-1 flex-col">
-              <p className="font-poppins font-normal text-[14px] sm:text-[16px] lg:text-[18px] capitalize text-[#F9F9F9] tracking-widest">
+              <p className="font-poppins font-normal text-[12px] sm:text-[14px] lg:text-[14px] capitalize text-[#F9F9F9] tracking-widest">
                 The top CCTV and networking solutions in Dubai are essential for
                 any business owner to consider for their security.
               </p>
@@ -128,10 +128,10 @@ export const LandingPage = () => {
               ></div>
             </div>
 
-            <div className="flex items-center justify-center w-full lg:w-[439px] lg:h-[90px]  p-4 sm:p-6 gap-4 sm:gap-3 rounded-[100px] flex-row bg-[#083F31] border border-[#3461FF] absolute bottom-4 lg:absolute lg:bottom-4">
-              <div className="flex flex-row w-full lg:w-[591px] lg:h-[73px] items-center justify-end rounded-[52px]  p-1.5 sm:p-2 gap-4 sm:gap-2.5 bg-[#BEF1C9] relative overflow-hidden ">
+            <div className="flex items-center justify-center w-full lg:w-[439px] lg:h-20  p-4 sm:p-6 gap-4 sm:gap-3 rounded-[100px] flex-row bg-[#083F31] border border-[#3461FF]  absolute bottom-30 lg:bottom-2 ">
+              <div className="flex flex-row w-full lg:w-[591px] lg:h-[60px] items-center justify-end rounded-[52px]  p-1.5 sm:p-2 gap-4 sm:gap-2.5 bg-[#BEF1C9] relative overflow-hidden ">
                 {/* Arrow + Button wrapper */}
-                <div className="relative flex items-center w-full h-[50px] lg:w-[591px] lg:h-[73px] rounded-[52px] p-1.5 sm:p-2 bg-[#BEF1C9] overflow-hidden">
+                <div className="relative flex items-center w-full h-[50px] lg:w-[591px] lg:h-[73px] rounded-[52px] p-1.5 sm:p-2 bg-[#BEF1C9] overflow-hidden ">
                   <div
                     className={
                       "flex items-center justify-center gap-3 absolute transition-transform duration-700 ease-in-out " +
@@ -139,7 +139,7 @@ export const LandingPage = () => {
                         ? // moved to RIGHT edge (same for all sizes)
                           "translate-x-[calc(100%-230px)] flex-row-reverse"
                         : // default left offset: 120px on mobile, 140px on lg+
-                          "translate-x-[60px] lg:translate-x-36 flex-row")
+                          "translate-x-25 lg:translate-x-36 flex-row")
                     }
                   >
                     <img
@@ -152,13 +152,13 @@ export const LandingPage = () => {
 
                     <button
                       onClick={() => setSwiped(!swiped)}
-                      className="flex items-center justify-center w-[180px] h-[50px] sm:h-[60px] rounded-[30px] p-2 sm:p-3 gap-4 sm:gap-2.5 cursor-pointer "
+                      className="flex items-center justify-center w-[180px] h-[50px] sm:h-[50px] rounded-[30px] p-2 sm:p-3 gap-4 sm:gap-2.5 cursor-pointer "
                       style={{
                         background:
                           "linear-gradient(90deg, #08F7B7 0%, #004F1A 100%)",
                       }}
                     >
-                      <p className="text-[#F9F9F9] font-radio-canada font-semibold text-[16px] sm:text-[20px] leading-[100%] tracking-[0] align-middle">
+                      <p className="text-[#F9F9F9] font-radio-canada font-semibold text-[12px] sm:text-[16px] leading-[100%] tracking-[0] align-middle">
                         Swipe to Switch
                       </p>
                     </button>

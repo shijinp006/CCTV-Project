@@ -21,8 +21,8 @@ export const WideRange = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center w-full bg-[#04231F] flex-wrap h-full lg:h-[400px]  lg:py-10 ">
-      <div className="flex items-center justify-center px-2 md:px-6 lg:px-10 mx-auto max-w-7xl flex-col flex-wrap ">
+    <div className="flex items-center justify-center w-full bg-[#04231F] flex-wrap h-full lg:h-[400px]  py-10 ">
+      <div className="flex items-center justify-center px-2 md:px-6 lg:px-10 mx-auto max-w-7xl flex-col flex-wrap lg:mt-0 ">
         {/* Title */}
         <div className="flex w-full lg:h-12 justify-center mb-6   ">
           <h1 className="font-radio-canada font-normal text-[25px] lg:text-[30px] leading-[100%] text-center bg-linear-to-r from-[#7d2dff] via-[#5200FF] to-[#0073ff] bg-clip-text text-transparent">

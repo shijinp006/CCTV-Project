@@ -4,7 +4,7 @@ import rightArrow from "../assets/rightarrow.svg";
 export const TopTechTrend = () => {
   return (
     <>
-      <div className="flex items-center justify-center w-full  flex-wrap lg:mt-0 mt-10">
+      <div className="flex items-center justify-center w-full  flex-wrap lg:py-0 py-10 ">
         <div className="flex items-center justify-center w-full max-w-7xl px-4 md:px-6 lg:px-10 mx-auto flex-col flex-wrap ">
           <div className="flex flex-row items-center justify-center w-full lg:h-[400px] gap-5 flex-wrap ">
             <div
@@ -40,7 +40,7 @@ export const TopTechTrend = () => {
                   </h2>
                 </div>
               </div>
-              <div className="flex w-[250px] lg:w-full lg:h-[95px]  lg:ml-10 ">
+              <div className="flex  w-full lg:h-[95px]  lg:ml-10 ">
                 <p className="font-poppins font-normal text-[10px] lg:text-[13px] lg:leading-[18px] text-white max-w-2xl text-start">
                   Stay ahead of the curve with our top tech trends in <br />{" "}
                   camera technology. Our innovative designs combine <br /> style

@@ -4,7 +4,7 @@ import FeatureImage from "../assets/FeatureImage.webp";
 export const NewFeature = () => {
   return (
     <>
-      <div className="flex items-center justify-center w-full  flex-wrap lg:mt-0 mt-10 ">
+      <div className="flex items-center justify-center w-full  flex-wrap lg:py-0 py-10  ">
         <div className="flex items-center justify-center w-full max-w-7xl px-4 md:px-6 lg:px-10 mx-auto flex-col flex-wrap">
           <div className="flex flex-row items-center justify-center w-full lg:h-[400px]  flex-wrap ">
             <div className="flex items-center flex-col  w-full lg:w-[460px] h-[335px] gap-3 flex-wrap  ">

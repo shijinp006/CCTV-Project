@@ -25,7 +25,7 @@ export const NewFeature = () => {
                 </div>
               </div>
               <div className="flex items-center w-full h-[100px]  lg:px-11">
-                <p className="font-poppins ml-10 lg:ml-0 font-normal text-[10px] lg:text-[13px] lg:leading-5 text-white max-w-2xl text-start">
+                <p className="font-poppins ml-10 lg:ml-5 font-normal text-[10px] lg:text-[13px] lg:leading-5 text-white max-w-2xl text-start">
                   Experience our latest camera model with a<br />
                   plethora of new features that will elevate your
                   <br />

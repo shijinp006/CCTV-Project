@@ -6,8 +6,8 @@ export const NewFeature = () => {
     <>
       <div className="flex items-center justify-center w-full  flex-wrap lg:mt-0 mt-10 ">
         <div className="flex items-center justify-center w-full max-w-7xl px-4 md:px-6 lg:px-10 mx-auto flex-col flex-wrap">
-          <div className="flex flex-row items-center justify-center w-full lg:h-[400px] lg:gap-5 flex-wrap ">
-            <div className="flex items-center flex-col  w-full lg:w-[538px] h-[335px] gap-3 flex-wrap  ">
+          <div className="flex flex-row items-center justify-center w-full lg:h-[400px]  flex-wrap ">
+            <div className="flex items-center flex-col  w-full lg:w-[460px] h-[335px] gap-3 flex-wrap  ">
               <div className="flex flex-row flex-wrap w-full h-[79px] items-center justify-center   ">
                 <div className="flex items-center justify-center w-full h-[34px] ">
                   <h1
@@ -24,8 +24,8 @@ export const NewFeature = () => {
                   </h2>
                 </div>
               </div>
-              <div className="flex items-center w-full h-[90px]  lg:px-23">
-                <p className="font-poppins font-normal text-[10px] lg:text-[13px] lg:leading-[18px] text-white max-w-2xl text-start">
+              <div className="flex items-center w-full h-[100px]  lg:px-11">
+                <p className="font-poppins font-normal text-[10px] lg:text-[13px] lg:leading-5 text-white max-w-2xl text-start">
                   Experience our latest camera model with a<br />
                   plethora of new features that will elevate your
                   <br />

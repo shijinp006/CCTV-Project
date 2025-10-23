@@ -1,13 +1,13 @@
 import rightArrow from "../assets/rightarrow.svg";
 import Star from "../assets/star.svg";
-import QualityImage from "../assets/QualityImage.png"
+import QualityImage from "../assets/QualityImage.png";
 export const BestQuality = () => {
   return (
     <>
       <div className="flex items-center justify-center w-full  flex-wrap lg:mt-0 mt-10 ">
         <div className="flex items-center justify-center w-full max-w-7xl px-4 md:px-6 lg:px-10 mx-auto flex-col flex-wrap">
-          <div className="flex flex-row items-center justify-center w-full lg:h-[400px] lg:gap-5 flex-wrap ">
-            <div className="flex items-center flex-col  w-full lg:w-[538px] h-[335px] gap-3 flex-wrap  ">
+          <div className="flex flex-row items-center justify-center w-full lg:h-[400px]  flex-wrap ">
+            <div className="flex items-center flex-col  w-full lg:w-[460px] h-[335px] gap-3 flex-wrap ">
               <div className="flex flex-row flex-wrap w-full h-[79px] items-center justify-center   ">
                 <div className="flex items-center justify-center w-full h-[34px] ">
                   <h1
@@ -24,8 +24,8 @@ export const BestQuality = () => {
                   </h2>
                 </div>
               </div>
-              <div className="flex items-center w-full h-[90px]  lg:px-23">
-                <p className="font-poppins font-normal text-[10px] lg:text-[13px] lg:leading-[18px] text-white max-w-2xl text-start">
+              <div className="flex items-center w-full h-[100px]  lg:px-11 ">
+                <p className="font-poppins font-normal text-[10px] lg:text-[13px] lg:leading-5 text-white max-w-2xl text-start">
                   We consistently offer the best quality cameras available{" "}
                   <br /> on the market. Our products are designed to minimize{" "}
                   <br />
@@ -33,7 +33,7 @@ export const BestQuality = () => {
                   whenever you need it.
                 </p>
               </div>
-              <div className="flex flex-col w-[280px] lg:w-full lg:h-10 gap-0.5  justify-center items-center ">
+              <div className="flex flex-col w-[280px] lg:w-full lg:h-10 gap-0.5  justify-center items-center  ">
                 <div className="w-full lg:w-[400px] h-5 p-[5px] gap-[5px] ">
                   <div className="w-[280px]  lg:w-full  opacity-100 gradient-border"></div>
                 </div>
@@ -54,8 +54,8 @@ export const BestQuality = () => {
                 </div>
               </button>
             </div>
-            <div
-              className="flex items-center justify-center w-full h-[330px] lg:w-[300px] lg:h-[330px] rounded-[10px] lg:rounded-[20px]  "
+             <div
+              className="flex items-center justify-center w-full h-[330px] lg:w-[300px] lg:h-[330px] rounded-[10px] lg:rounded-[20px] lg:mr-10 border "
               style={{
                 backgroundImage: `url(${QualityImage})`,
                 backgroundSize: "cover",

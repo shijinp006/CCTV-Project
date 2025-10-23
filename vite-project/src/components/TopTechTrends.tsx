@@ -42,12 +42,13 @@ export const TopTechTrend = () => {
               </div>
               <div className="flex w-[250px] lg:w-full lg:h-[95px]  lg:ml-10 ">
                 <p className="font-poppins font-normal text-[10px] lg:text-[13px] lg:leading-[18px] text-white max-w-2xl text-start">
-                  Stay ahead of the curve with our top tech trends in <br /> camera
-                  technology. Our innovative designs combine <br /> style and function,
-                  ensuring you always capture the <br /> perfect shot with ease.
+                  Stay ahead of the curve with our top tech trends in <br />{" "}
+                  camera technology. Our innovative designs combine <br /> style
+                  and function, ensuring you always capture the <br /> perfect
+                  shot with ease.
                 </p>
               </div>
-              <div className="flex flex-col w-[280px] lg:w-full lg:h-10 gap-0.5  justify-center items-center ">
+              <div className="flex flex-col w-[280px] lg:w-full lg:h-10 gap-0.5  justify-center items-center  ">
                 <div className="w-full lg:w-[400px] h-5 p-[5px] gap-[5px] ">
                   <div className="w-[280px]  lg:w-full  opacity-100 gradient-border"></div>
                 </div>

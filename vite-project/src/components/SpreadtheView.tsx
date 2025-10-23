@@ -6,7 +6,7 @@ export const SpreadTheView = () => {
     <>
       <div className="flex items-center justify-center w-full  flex-wrap ">
         <div className="flex items-center justify-center w-full max-w-7xl px-4 md:px-6 lg:px-10 mx-auto flex-col flex-wrap ">
-          <div className="flex flex-row items-center justify-center w-full lg:h-[400px] gap-5 flex-wrap ">
+          <div className="flex flex-row items-center justify-center w-full lg:h-[400px] gap-5 flex-wrap  ">
             <div
               className="flex items-center justify-center w-full h-[330px] lg:w-[300px] lg:h-[330px] rounded-[10px] lg:rounded-[20px]  "
               style={{
@@ -16,7 +16,7 @@ export const SpreadTheView = () => {
                 backgroundRepeat: "no-repeat",
               }}
             ></div>
-            <div className="flex items-center  flex-col w-full lg:w-[380px] lg:h-[300px] flex-wrap  gap-3 lg:mb-10   ">
+            <div className="flex items-center  flex-col w-full lg:w-[380px] lg:h-[300px] flex-wrap  gap-3 lg:mb-10  ">
               <div className="flex flex-col lg:w-[200px] lg:h-[70px] ">
                 <div className="w-full lg:h-7  ">
                   <h1
@@ -49,7 +49,7 @@ export const SpreadTheView = () => {
                   moments.
                 </p>
               </div>
-              <div className="flex flex-col w-[280px] lg:w-full lg:h-10 gap-0.5  justify-center items-center ">
+              <div className="flex flex-col w-[280px] lg:w-full lg:h-10 gap-0.5  justify-center items-center  ">
                 <div className="w-full lg:w-[400px] h-5 p-[5px] gap-[5px] ">
                   <div className="w-[280px]  lg:w-full  opacity-100 gradient-border"></div>
                 </div>

@@ -1,4 +1,4 @@
-import ToptechImage from "../assets/TopTechImage.jpg";
+import ToptechImage from "../assets/TopTechImage.webp";
 import Star from "../assets/star.svg";
 import rightArrow from "../assets/rightarrow.svg";
 export const TopTechTrend = () => {

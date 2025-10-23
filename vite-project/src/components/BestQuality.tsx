@@ -1,6 +1,6 @@
 import rightArrow from "../assets/rightarrow.svg";
 import Star from "../assets/star.svg";
-import QualityImage from "../assets/QualityImage.png";
+import QualityImage from "../assets/QualityImage.webp";
 export const BestQuality = () => {
   return (
     <>

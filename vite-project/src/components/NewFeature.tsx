@@ -1,6 +1,6 @@
 import rightArrow from "../assets/rightarrow.svg";
 import Star from "../assets/star.svg";
-import FeatureImage from "../assets/FeatureImage.jpg";
+import FeatureImage from "../assets/FeatureImage.webp";
 export const NewFeature = () => {
   return (
     <>

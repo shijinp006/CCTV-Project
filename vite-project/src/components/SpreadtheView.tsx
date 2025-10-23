@@ -1,4 +1,4 @@
-import camera from "../assets/360camera.png";
+import camera from "../assets/360camera.webp";
 import Star from "../assets/star.svg";
 import rightArrow from "../assets/rightarrow.svg";
 export const SpreadTheView = () => {

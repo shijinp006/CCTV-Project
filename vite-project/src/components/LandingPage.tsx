@@ -128,7 +128,7 @@ export const LandingPage = () => {
               ></div>
             </div>
 
-            <div className="flex items-center justify-center w-full lg:w-[439px] lg:h-20  p-4 sm:p-6 gap-4 sm:gap-3 rounded-[100px] flex-row bg-[#083F31] border border-[#3461FF]  absolute bottom-30 lg:bottom-2 ">
+            <div className="flex items-center justify-center w-full lg:w-[439px] lg:h-20  p-4 sm:p-6 gap-4 sm:gap-3 rounded-[100px] flex-row bg-[#083F31] border border-[#3461FF]  absolute bottom-30 lg:bottom-10 ">
               <div className="flex flex-row w-full lg:w-[591px] lg:h-[60px] items-center justify-end rounded-[52px]  p-1.5 sm:p-2 gap-4 sm:gap-2.5 bg-[#BEF1C9] relative overflow-hidden ">
                 {/* Arrow + Button wrapper */}
                 <div className="relative flex items-center w-full h-[50px] lg:w-[591px] lg:h-[73px] rounded-[52px] p-1.5 sm:p-2 bg-[#BEF1C9] overflow-hidden ">

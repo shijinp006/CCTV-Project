@@ -5,7 +5,7 @@ import NightVisionCamera from "../assets/Night Vision Camera.webp";
 import WebCam from "../assets/web Cam.webp";
 import SingleCam from "../assets/Single cam.webp";
 import CartIcon from "../assets/cartIcon.svg";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 
 export const cameraProducts = [
@@ -70,7 +70,7 @@ export const ExploreProduct = () => {
   }, []);
   return (
     <>
-      <div className="flex items-center justify-center w-full h-full lg:h-[580px] flex-wrap bg-[#0D1A1F]">
+      <div className="flex items-center justify-center w-full h-full lg:h-[580px] flex-wrap ">
         <div className="flex flex-col flex-wrap items-center justify-center w-full px-4 md:px-6 lg:px-10 max-w-7xl mx-auto ">
           <div className="flex items-center justify-center flex-col w-full lg:w-[840px] ">
             <div className="flex items-center justify-center w-full lg:h-[60px] ">
@@ -166,7 +166,7 @@ export const ExploreProduct = () => {
                       (product, index) => (
                         <div
                           key={index}
-                          className="flex items-center p-3.5 flex-col w-50 h-[300px] rounded-[14px] bg-[#0D0D0D] shrink-0"
+                          className="flex items-center p-3.5 flex-col w-50 h-[300px] rounded-[14px] bg-[#0A1E1F] shrink-0"
                         >
                           <div className="flex items-center flex-col w-40 h-[280px] gap-3.5" >
                             <div

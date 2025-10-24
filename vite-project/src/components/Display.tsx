@@ -15,9 +15,7 @@ export const Display = () => {
         <div className="w-full">
           <Center />
         </div>
-         <div className="w-full">
-          <ExploreProduct />
-        </div>
+      
 
       </div>
     </>

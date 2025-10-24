@@ -55,7 +55,7 @@ export const BestQuality = () => {
               </button>
             </div>
              <div
-              className="flex items-center justify-center w-full h-[330px] lg:w-[300px] lg:h-[330px] rounded-[10px] lg:rounded-[20px] lg:mr-10 border "
+              className="flex items-center justify-center w-full h-[330px] lg:w-[280px] lg:h-[330px] rounded-[10px] lg:rounded-[20px] lg:mr-30  "
               style={{
                 backgroundImage: `url(${QualityImage})`,
                 backgroundSize: "cover",

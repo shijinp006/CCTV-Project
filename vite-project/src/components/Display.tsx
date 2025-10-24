@@ -1,6 +1,7 @@
 import { LandingPage } from "./LandingPage";
 import { WideRange } from "./Widerange";
 import { Center } from "./Center";
+import { ExploreProduct } from "./ExploreProduct";
 export const Display = () => {
   return (
     <>
@@ -14,6 +15,10 @@ export const Display = () => {
         <div className="w-full">
           <Center />
         </div>
+         <div className="w-full">
+          <ExploreProduct />
+        </div>
+
       </div>
     </>
   );

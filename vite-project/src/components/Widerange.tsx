@@ -21,21 +21,21 @@ export const WideRange = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center w-full bg-[#04231F] flex-wrap h-full lg:h-[400px]  py-10 ">
-      <div className="flex items-center justify-center px-2 md:px-6 lg:px-10 mx-auto max-w-7xl flex-col flex-wrap lg:mt-0 ">
+    <div className="flex items-center justify-center w-full bg-[#04231F] flex-wrap h-full lg:h-[400px] py-10 lg:py-0 ">
+      <div className="flex items-center justify-center px-2 md:px-6 lg:px-10 mx-auto max-w-7xl flex-col flex-wrap lg:mt-0  ">
         {/* Title */}
-        <div className="flex w-full lg:h-12 justify-center mb-6   ">
-          <h1 className="font-radio-canada font-normal text-[25px] lg:text-[30px] leading-[100%] text-center bg-linear-to-r from-[#7d2dff] via-[#5200FF] to-[#0073ff] bg-clip-text text-transparent">
+        <div className="flex w-full lg:w-[790px] lg:h-12 justify-center items-end mb-6   ">
+          <h1 className="font-radio-canada font-normal text-[25px] lg:text-[28px] leading-[100%] text-center bg-linear-to-r from-[#7d2dff] via-[#5200FF] to-[#0073ff] bg-clip-text text-transparent">
             The Wide Range Futures
           </h1>
         </div>
 
         {/* Services */}
-        <div className="w-full flex flex-col items-center justify-center gap-6 lg:flex-row lg:h-[244px] ">
+        <div className="w-full flex flex-col lg:px-30 items-center justify-center gap-4 lg:flex-row lg:h-[244px] lg:pl-30  ">
           {services.map((service, idx) => (
             <div
               key={idx}
-              className="flex items-center justify-center w-[300px] h-[220px] bg-[#222222] rounded-[20px] flex-col gap-4 "
+              className="flex items-center justify-center w-64 h-[220px] bg-[#222222] rounded-2xl flex-col gap-4  "
             >
               <div className="flex flex-col w-[200px] h-[140px] items-center ">
                 {service.image && (

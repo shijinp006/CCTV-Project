@@ -9,14 +9,14 @@ export const LandingPage = () => {
   return (
     <>
       <div
-        className="relative flex flex-col   w-full min-h-screen bg-center bg-cover"
+        className="relative flex flex-col  w-full min-h-screen bg-center bg-cover"
         style={{
           backgroundImage: `url(${bgImage})`,
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="flex   px-4 md:px-6 lg:px-10 max-w-7xl mx-auto w-full lg:mt-10  ">
-          <nav className="flex items-center justify-between lg:h-[72px] w-full  relative ">
+        <div className="flex  px-4 md:px-6 lg:px-10 max-w-7xl mx-auto w-full  lg:mt-10 p-10 lg:p-0 ">
+          <nav className="flex items-center justify-between lg:h-[72px] w-full  relative  pr-30 ">
             <div className="flex items-center justify-center lg:w-52 lg:h-[60px] lg:ml-50">
               <h1 className="font-poppins font-normal text-[28px] sm:text-[32px] lg:text-[40px] uppercase text-[#F9F9F9]">
                 Sacrosys
@@ -24,7 +24,7 @@ export const LandingPage = () => {
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden lg:flex items-center justify-center gap-4 flex-row lg:w-[453px] lg:h-[62px] rounded-xl bg-[#B4FFD73D]">
+            <div className="hidden lg:flex items-center justify-center gap-4 flex-row lg:w-[430px] lg:h-[62px] rounded-xl bg-[#B4FFD73D]">
               <p className="font-poppins font-normal text-[16px] lg:text-[18px] leading-[100%] text-white">
                 Products
               </p>
@@ -96,7 +96,7 @@ export const LandingPage = () => {
           </nav>
         </div>
 
-        <div className="flex items-center justify-center gap-6 sm:gap-8 w-full max-w-7xl px-2 sm:px-6 lg:px-10 mx-auto flex-col ">
+        <div className="flex items-center justify-center gap-6 sm:gap-8 w-full max-w-7xl px-2 sm:px-6 lg:px-10 mx-auto flex-col lg:mt-0  ">
           {/* Navigation */}
 
           {/* Hero Section */}
@@ -107,7 +107,8 @@ export const LandingPage = () => {
                   Comprehensive{" "}
                 </span>
                 <span className="text-[#08F7C3] leading-[100%]">
-                  CCTV and Network Solutions Tailored for <br />
+                  CCTV and <br />
+                  Network Solutions Tailored for <br />
                 </span>
                 <span className="text-gradient-alt leading-[100%]">
                   Every Organization

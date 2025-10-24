@@ -1,7 +1,7 @@
 import { LandingPage } from "./LandingPage";
 import { WideRange } from "./Widerange";
 import { Center } from "./Center";
-import { ExploreProduct } from "./ExploreProduct";
+
 export const Display = () => {
   return (
     <>

@@ -16,7 +16,7 @@ export const LandingPage = () => {
         }}
       >
         <div className="flex  px-4 md:px-6 lg:px-10 max-w-7xl mx-auto w-full  lg:mt-10 p-10 lg:p-0 ">
-          <nav className="flex items-center justify-between lg:h-[72px] w-full  relative  pr-30 ">
+          <nav className="flex items-center justify-between lg:h-[72px] w-full  relative  lg:pr-30  ">
             <div className="flex items-center justify-center lg:w-52 lg:h-[60px] lg:ml-50">
               <h1 className="font-poppins font-normal text-[28px] sm:text-[32px] lg:text-[40px] uppercase text-[#F9F9F9]">
                 Sacrosys

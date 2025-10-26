@@ -122,7 +122,7 @@ export const LandingPage = () => {
                 any <br /> business owner to consider for their security.
               </p>
               <div
-                className="lg:w-[648px] w-full border border-transparent"
+                className="lg:w-[589px] w-full border border-transparent"
                 style={{
                   borderImageSlice: 1,
                   borderImageSource:

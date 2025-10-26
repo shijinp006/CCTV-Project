@@ -5,10 +5,11 @@ import { NewFeature } from "./NewFeature";
 import { ExploreProduct } from "./ExploreProduct";
 import { EnhanceYour } from "./EnhanceYour";
 import { OurServices } from "./OurServices";
+
 export const Center = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center w-full min-h-screen bg-linear-to-b from-[#05221F] to-[#0A1E1F]">
+      <div className="flex flex-col items-center justify-center w-full min-h-screen bg-linear-to-b from-[#04231F] via-[#120E23].via-[#05221F] to-[#151320]">
         <div className="w-full">
           {" "}
           <SpreadTheView />
@@ -24,7 +25,7 @@ export const Center = () => {
             {" "}
             <NewFeature />
           </div>
-           <div className="w-full">
+          <div className="w-full">
             {" "}
             <ExploreProduct />
           </div>
@@ -32,7 +33,7 @@ export const Center = () => {
             {" "}
             <EnhanceYour />
           </div>
-            <div className="w-full">
+          <div className="w-full">
             {" "}
             <OurServices />
           </div>

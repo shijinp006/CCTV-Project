@@ -45,7 +45,7 @@ export const LandingPage = () => {
             </div>
 
             {/* Mobile Hamburger */}
-            <div className="lg:hidden flex items-center">
+            <div className="lg:hidden flex items-center ">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="flex flex-col justify-between w-8 h-6 focus:outline-none"
@@ -102,7 +102,7 @@ export const LandingPage = () => {
           {/* Hero Section */}
           <div className="flex items-center lg:py-20 flex-col w-full lg:w-[774px] lg:h-[273px] gap-4 sm:gap-4">
             <div className="lg:w-[774px] lg:h-[180px]">
-              <h1 className="font-poppins font-bold text-[24px] sm:text-[28px] lg:text-[30px] capitalize tracking-widest leading-8 sm:leading-10 lg:leading-9">
+              <h1 className="font-poppins font-bold text-[22px] sm:text-[28px] lg:text-[30px] capitalize tracking-widest leading-8 sm:leading-10 lg:leading-9">
                 <span className="text-gradient leading-[100%]">
                   Comprehensive{" "}
                 </span>

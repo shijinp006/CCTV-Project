@@ -29,7 +29,7 @@ export const TopTechTrend = () => {
                     Top Tech Trends
                   </h1>
                 </div>
-                <div className="flex items-center  lg:w-[200px] lg: h-[29px]  lg:px-5">
+                <div className="flex items-center  lg:w-[200px] lg: h-[29px] px-1 lg:px-5 ">
                   <h2
                     className="
         font-radio-canada font-normal text-[16px] leading-[100%] text-white text-start

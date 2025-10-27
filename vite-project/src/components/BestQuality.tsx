@@ -18,7 +18,7 @@ export const BestQuality = () => {
                     Best Quality Ever
                   </h1>
                 </div>
-                <div className="flex  px-3 w-[200px] h-[29px] ">
+                <div className="flex  px-4 w-[200px] h-[29px]   ">
                   <h2 className="font-radio-canada font-normal text-[16px] leading-[100%] tracking-[0] text-white">
                     Life Long
                   </h2>

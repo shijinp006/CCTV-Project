@@ -29,7 +29,7 @@ export const SpreadTheView = () => {
                     360 degree Special
                   </h1>
                 </div>
-                <div className="flex items-center  lg:w-[200px] lg: h-[29px] ">
+                <div className="flex items-center  lg:w-[200px] lg: h-[29px] px-1  ">
                   <h2
                     className="
         font-radio-canada font-normal text-[16px] leading-[100%] text-white text-start

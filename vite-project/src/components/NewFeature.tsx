@@ -18,7 +18,7 @@ export const NewFeature = () => {
                     New Features Galore
                   </h1>
                 </div>
-                <div className="flex w-[220px] h-[29px]  text-start">
+                <div className="flex w-[220px] h-[29px]  px-1 ">
                   <h2 className="font-radio-canada font-normal text-[16px] leading-[100%] tracking-[0] text-white text-start">
                     Enhanced Performance
                   </h2>

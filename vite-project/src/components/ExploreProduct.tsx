@@ -71,9 +71,9 @@ export const ExploreProduct = () => {
   return (
     <>
       <div className="flex items-center justify-center w-full h-full lg:h-[580px] flex-wrap ">
-        <div className="flex flex-col flex-wrap items-center justify-center w-full px-4 md:px-6 lg:px-10 max-w-7xl mx-auto ">
-          <div className="flex items-center justify-center flex-col w-full lg:w-[840px] ">
-            <div className="flex items-center justify-center w-full lg:h-[60px] ">
+        <div className="flex flex-col flex-wrap items-center justify-center w-full px-4 md:px-6 lg:px-20 max-w-7xl mx-auto ">
+          <div className="flex items-center justify-center flex-col w-full  ">
+            <div className="flex items-end justify-center w-full lg:h-[60px] ">
               <h1 className="font-poppins font-normal text-[25px] lg:text-[30px] leading-[100%] text-center bg-linear-to-r from-[#7d2dff] via-[#5200FF] to-[#0073ff] bg-clip-text text-transparent">
                 Explore Products
               </h1>
@@ -86,15 +86,15 @@ export const ExploreProduct = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-full h-[300px] flex flex-row items-center gap-2.5">
+              <div className="w-full h-[300px] flex flex-row items-center gap-2.5 lg:gap-0">
                 {/* Desktop view */}
-                <div className="hidden md:flex flex-row items-center justify-between w-full gap-4">
+                <div className="hidden md:grid grid-cols-4 place-items-center justify-between w-full gap-4 lg:gap-0 ">
                   {cameraProducts.map((product) => (
                     <div
                       key={product.id}
-                      className="flex items-center p-3.5 flex-col w-50 h-[300px] rounded-[14px] bg-[#0D0D0D]"
+                      className="flex items-center py-3 px-2 flex-col w-50 h-[300px] rounded-[14px] bg-[#0D0D0D] border"
                     >
-                      <div className="flex items-center flex-col w-40 h-[280px] gap-3.5">
+                      <div className="flex items-center flex-col w-full h-[300px] gap-3.5">
                         <div
                           className="flex justify-center pb-20 pr-2 items-center w-full h-[130px] rounded-[10px] bg-cover bg-center"
                           style={{
@@ -168,7 +168,7 @@ export const ExploreProduct = () => {
                           key={index}
                           className="flex items-center p-3.5 flex-col w-50 h-[300px] rounded-[14px] bg-[#0A1E1F] shrink-0"
                         >
-                          <div className="flex items-center flex-col w-40 h-[280px] gap-3.5" >
+                          <div className="flex items-center flex-col w-40 h-[280px] gap-3.5">
                             <div
                               className="flex justify-center pb-20 pr-2 items-center w-full h-[130px] rounded-[10px] bg-cover bg-center"
                               style={{

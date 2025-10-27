@@ -5,39 +5,90 @@ import { NewFeature } from "./NewFeature";
 import { ExploreProduct } from "./ExploreProduct";
 import { EnhanceYour } from "./EnhanceYour";
 import { OurServices } from "./OurServices";
+import { motion } from "framer-motion";
 
 export const Center = () => {
+  const sectionVariants: any = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
+  };
+
   return (
     <>
-      <div className="flex flex-col items-center justify-center w-full min-h-screen bg-linear-to-b from-[#04231F] via-[#120E23].via-[#05221F] to-[#151320]">
-        <div className="w-full">
-          {" "}
+      <div className="flex flex-col items-center justify-center w-full min-h-screen gap-6  bg-linear-to-b from-[#04231F] via-[#120E23].via-[#05221F] to-[#151320]">
+        <motion.div
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="w-full"
+        >
           <SpreadTheView />
-        </div>
-        <div className="w-full">
-          {" "}
+        </motion.div>
+
+        <motion.div
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="w-full"
+        >
           <BestQuality />
-        </div>
-        <div className="w-full">
-          {" "}
+        </motion.div>
+
+        <motion.div
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="w-full"
+        >
           <TopTechTrend />
-          <div className="w-full">
-            {" "}
-            <NewFeature />
-          </div>
-          <div className="w-full">
-            {" "}
-            <ExploreProduct />
-          </div>
-          <div className="w-full">
-            {" "}
-            <EnhanceYour />
-          </div>
-          <div className="w-full">
-            {" "}
-            <OurServices />
-          </div>
-        </div>
+        </motion.div>
+
+        <motion.div
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="w-full"
+        >
+          <NewFeature />
+        </motion.div>
+
+        <motion.div
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="w-full"
+        >
+          <ExploreProduct />
+        </motion.div>
+
+        <motion.div
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="w-full"
+        >
+          <EnhanceYour />
+        </motion.div>
+
+        <motion.div
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="w-full"
+        >
+          <OurServices />
+        </motion.div>
       </div>
     </>
   );

@@ -39,8 +39,8 @@ export const Footer = () => {
   return (
     <>
       <footer className="flex lg:items-center justify-center w-full min-h-[900px] lg:min-h-[437px] flex-wrap relative bg-linear-to-b from-[#151320] to-[#120E23] ">
-        <div className="flex flex-col items-center lg:justify-center w-full px-4 md:px-6 lg:px-10 max-w-7xl mx-auto">
-          <div className="flex  justify-between flex-col w-full lg:w-[860px] h-[200px] ">
+        <div className="flex flex-col items-center lg:justify-center w-full px-4 md:px-6 lg:px-20 max-w-7xl mx-auto">
+          <div className="flex  justify-between flex-col w-full  h-[200px] ">
             <div className="grid grid-cols-1 lg:grid-cols-4 w-full h-[200px] px-28 lg:px-0  ">
               {footerLinks.map((section, index) => (
                 <div
@@ -71,7 +71,7 @@ export const Footer = () => {
               ))}
             </div>
             <div
-              className=" hidden lg:block w-full lg:w-[860px] h-0 opacity-100 "
+              className=" hidden lg:block w-full  h-0 opacity-100 "
               style={{
                 borderWidth: "1px",
                 borderStyle: "solid",

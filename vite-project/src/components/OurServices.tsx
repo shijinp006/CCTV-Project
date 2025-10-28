@@ -1,10 +1,9 @@
 import RoundWithArrow from "../assets/roundwitharrow.svg";
 import RoundArrow from "../assets/roundwithArrow2.svg";
 import { ServicesSection } from "./ServicesSection";
+import { motion, AnimatePresence } from "framer-motion";
 
 import { useState } from "react";
-
-;
 
 export const OurServices = () => {
   const [service, setService] = useState("");
@@ -75,11 +74,24 @@ export const OurServices = () => {
                 </div>
 
                 {/* Dropdown content */}
-                {openDropdown === "Entreprise Service" && (
-                  <div className="w-full mt-4 animate-fadeIn">
-                    <ServicesSection service={service} />
-                  </div>
-                )}
+                <AnimatePresence>
+                  {openDropdown === "Entreprise Service" && (
+                    <motion.div
+                      className="w-full mt-4"
+                      initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                      animate={{ opacity: 1, scale: 1, y: 0 }}
+                      exit={{ opacity: 0, scale: 0.8, y: 20 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 200,
+                        damping: 20,
+                        duration: 0.5,
+                      }}
+                    >
+                      <ServicesSection service={service} />
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
 
               {/* Divider */}
@@ -123,11 +135,24 @@ export const OurServices = () => {
                   </div>
 
                   {/* Dropdown content */}
-                  {openDropdown === "Expertise Service" && (
-                    <div className="w-full mt-4 animate-fadeIn">
-                      <ServicesSection service={service} />
-                    </div>
-                  )}
+                  <AnimatePresence>
+                    {openDropdown === "Expertise Service" && (
+                      <motion.div
+                        className="w-full mt-4"
+                        initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                        animate={{ opacity: 1, scale: 1, y: 0 }}
+                        exit={{ opacity: 0, scale: 0.8, y: 20 }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 200,
+                          damping: 20,
+                          duration: 0.5,
+                        }}
+                      >
+                        <ServicesSection service={service} />
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
               </div>
 
@@ -169,11 +194,24 @@ export const OurServices = () => {
                 </div>
 
                 {/* Dropdown content */}
-                {openDropdown === "Process" && (
-                  <div className="w-full mt-4 animate-fadeIn">
-                    <ServicesSection service={service} />
-                  </div>
-                )}
+                <AnimatePresence>
+                  {openDropdown === "Process" && (
+                    <motion.div
+                      className="w-full mt-4"
+                      initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                      animate={{ opacity: 1, scale: 1, y: 0 }}
+                      exit={{ opacity: 0, scale: 0.8, y: 20 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 200,
+                        damping: 20,
+                        duration: 0.5,
+                      }}
+                    >
+                      <ServicesSection service={service} />
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
 
               {/* Divider */}
@@ -216,11 +254,24 @@ export const OurServices = () => {
                 </div>
 
                 {/* Dropdown content */}
-                {openDropdown === "Mobile App Development" && (
-                  <div className="w-full mt-4 animate-fadeIn">
-                    <ServicesSection service={service} />
-                  </div>
-                )}
+                <AnimatePresence>
+                  {openDropdown === "Mobile App Development" && (
+                    <motion.div
+                      className="w-full mt-4"
+                      initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                      animate={{ opacity: 1, scale: 1, y: 0 }}
+                      exit={{ opacity: 0, scale: 0.8, y: 20 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 200,
+                        damping: 20,
+                        duration: 0.5,
+                      }}
+                    >
+                      <ServicesSection service={service} />
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             </div>
           </div>

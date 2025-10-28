@@ -6,8 +6,8 @@ export const NewFeature = () => {
     <>
       <div className="flex items-center justify-center w-full  flex-wrap lg:py-0 py-10  ">
         <div className="flex items-center justify-center w-full max-w-7xl px-4 md:px-6 lg:px-20 mx-auto flex-col flex-wrap">
-          <div className="flex flex-row items-center justify-between w-full lg:h-[400px]  flex-wrap ">
-            <div className="flex items-center flex-col  w-full lg:w-[480px] lg:h-[400px] h-[335px] gap-3 flex-wrap lg:ml-20 lg:mt-10">
+          <div className="flex flex-row items-center justify-between w-full lg:h-[400px]  flex-wrap lg:mt-15 ">
+            <div className="flex items-center flex-col  w-full lg:w-[480px] lg:h-[400px] h-[335px] gap-3 flex-wrap lg:ml-20 ">
               <div className="flex flex-row flex-wrap w-full h-[79px] items-center justify-center   ">
                 <div className="flex items-center justify-center w-full h-[34px] ">
                   <h1

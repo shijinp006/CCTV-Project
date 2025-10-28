@@ -1,4 +1,5 @@
 import cameraImage from "../assets/Cameraenquary.webp";
+
 export const EnhanceYour = () => {
   return (
     <>
@@ -6,7 +7,7 @@ export const EnhanceYour = () => {
         <div className="flex flex-wrap lg:items-center justify-center w-full px-4 md:px-6 lg:px-20 mx-auto max-w-7xl">
           <div className="flex flex-col lg:flex-row flex-wrap items-center justify-between w-full  h-auto lg:h-[300px] rounded-[22px] bg-linear-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF] p-4">
             {/* Image Section */}
-            <div className="flex items-center justify-center w-full h-[200px]  lg:w-[360px] mb-4 lg:mb-0 ">
+            <div className="flex items-center justify-center w-full h-[200px] md:w-[260px]  lg:w-[360px] mb-4 lg:mb-0 ">
               <img
                 src={cameraImage}
                 alt="Camera Image"

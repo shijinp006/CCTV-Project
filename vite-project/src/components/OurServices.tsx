@@ -1,12 +1,12 @@
 import RoundWithArrow from "../assets/roundwitharrow.svg";
 import RoundArrow from "../assets/roundwithArrow2.svg";
-import { items } from "../Items";
-import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { ServicesSection } from "./ServicesSection";
 
+import { useState } from "react";
+
+;
+
 export const OurServices = () => {
-  const [current, setCurrent] = useState(0);
   const [service, setService] = useState("");
   const [openDropdown, setOpenDropdown] = useState(null);
 
@@ -19,16 +19,6 @@ export const OurServices = () => {
       setService(title);
     }
   };
-  // Auto-scroll every 5 seconds (only on mobile)
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (window.innerWidth < 1024) {
-        setCurrent((prev) => (prev + 1) % items.length);
-      }
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [items.length]);
 
   return (
     <>
@@ -73,11 +63,13 @@ export const OurServices = () => {
 
                   {/* Arrow Icon */}
                   <img
-                    src={RoundWithArrow}
+                    src={
+                      openDropdown === "Entreprise Service"
+                        ? RoundArrow
+                        : RoundWithArrow
+                    }
                     alt="Arrow Icon"
-                    className={`w-[25px] sm:w-[30px] cursor-pointer transition-transform duration-300 ${
-                      openDropdown === "Entreprise Service" ? "rotate-180" : ""
-                    }`}
+                    className="w-[25px] sm:w-[30px] cursor-pointer transition-transform duration-300"
                     onClick={() => toggleDropdown("Entreprise Service")}
                   />
                 </div>
@@ -107,7 +99,7 @@ export const OurServices = () => {
                   {/* Dropdown header */}
                   <div className="flex items-center justify-between w-full h-auto p-3 lg:px-10 gap-2 ">
                     {/* Left section (Number + Title) */}
-                    <div className="flex items-center justify-between w-[200px] lg:w-[257px] ">
+                    <div className="flex items-center justify-between w-[194px] lg:w-[257px]  ">
                       <p className="font-raleway font-normal text-[14px] lg:text-[18px] text-white">
                         02
                       </p>
@@ -118,11 +110,14 @@ export const OurServices = () => {
 
                     {/* Arrow Icon */}
                     <img
-                      src={RoundArrow}
+                      src={
+                        openDropdown === "Expertise Service"
+                          ? RoundArrow
+                          : RoundWithArrow
+                      }
                       alt="Arrow Icon"
-                      className={`w-[25px] sm:w-[30px] cursor-pointer transition-transform duration-300 ${
-                        openDropdown === "Expertise Service" ? "rotate-180" : ""
-                      }`}
+                      className={`w-[25px] sm:w-[30px] cursor-pointer transition-transform duration-300 $   
+                      `}
                       onClick={() => toggleDropdown("Expertise Service")}
                     />
                   </div>
@@ -134,97 +129,11 @@ export const OurServices = () => {
                     </div>
                   )}
                 </div>
-
-                <div className="flex flex-col lg:flex-row items-start lg:items-center gap-2 w-full px-4 lg:px-10">
-                  <div className="hidden lg:block w-px h-14 bg-[#9C9C9C] opacity-100 my-2"></div>
-
-                  <p className="font-raleway font-normal text-[14px] leading-6 text-[#9C9C9C]  sm:text-left w-full">
-                    Lorem ipsum dolor sit amet consectetur. Eu amet posuere
-                    consequat donec suspendisse lorem enim. Elit viverra nisl
-                    non nisl eleifend. Cursus erat mattis fames et mollis risus
-                    at.
-                  </p>
-                </div>
-
-                {/* Image cards */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center  w-full gap-4 mt-6">
-                  {/*mobile View */}
-                  <div className="block lg:hidden relative w-full overflow-hidden">
-                    <AnimatePresence mode="wait">
-                      <motion.div
-                        key={current}
-                        initial={{ opacity: 0, x: 50 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: -50 }}
-                        transition={{ duration: 0.6, ease: "easeInOut" }}
-                        className="relative flex items-center justify-center h-[180px] w-full rounded-lg overflow-hidden"
-                        style={{
-                          backgroundImage: `url(${items[current].image})`,
-                          backgroundSize: "cover",
-                          backgroundPosition: "center",
-                        }}
-                      >
-                        {/* Dark overlay */}
-                        <div
-                          aria-hidden="true"
-                          className="absolute inset-0"
-                          style={{ background: "rgba(0,0,0,0.55)" }}
-                        />
-
-                        {/* Text */}
-                        <div className="relative z-10 flex items-center justify-center w-full h-[25px]">
-                          <h2
-                            className="font-raleway text-[16px] text-center"
-                            style={{
-                              color: "#FFFFFF",
-                              textShadow:
-                                "0 2px 6px rgba(0,0,0,0.6), 0 0 8px rgba(255,255,255,0.08)",
-                            }}
-                          >
-                            {items[current].category}
-                          </h2>
-                        </div>
-                      </motion.div>
-                    </AnimatePresence>
-                  </div>
-
-                  {items.map((item, index) => (
-                    <div
-                      key={index}
-                      className=" relative  hidden lg:flex items-center justify-center h-[140px] lg:h-50 w-[140px] sm:w-[180px] lg:w-[280px] rounded-lg overflow-hidden"
-                      style={{
-                        backgroundImage: `url(${item.image})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                      }}
-                    >
-                      <div
-                        aria-hidden="true"
-                        className="absolute inset-0 pointer-events-none"
-                        style={{
-                          background: "rgba(0,0,0,0.55)",
-                        }}
-                      />
-                      <div className="relative z-10 flex items-center justify-center w-full h-[25px]">
-                        <h2
-                          className="font-raleway text-[14px] sm:text-[15px] text-center"
-                          style={{
-                            color: "#FFFFFF",
-                            textShadow:
-                              "0 2px 6px rgba(0,0,0,0.6), 0 0 8px rgba(255,255,255,0.08)",
-                          }}
-                        >
-                          {item.category}
-                        </h2>
-                      </div>
-                    </div>
-                  ))}
-                </div>
               </div>
 
               {/* Divider */}
               <div
-                className="w-full  h-0 opacity-100 mt-6 lg:mt-10"
+                className="w-full  h-0 opacity-100  "
                 style={{
                   borderWidth: "1px",
                   borderStyle: "solid",
@@ -234,11 +143,11 @@ export const OurServices = () => {
               />
 
               {/* Service Row 3 */}
-              <div className="flex flex-col items-center justify-center w-full">
+              <div className="flex flex-col items-center justify-center w-full mt-4">
                 {/* Dropdown header */}
                 <div className="flex items-center justify-between w-full h-auto p-3 lg:px-10 gap-2 border-b border-[#2A2840]">
                   {/* Left section (Number + Title) */}
-                  <div className="flex items-center justify-between w-[200px] lg:w-[166px]  ">
+                  <div className="flex items-center justify-between w-[120px] lg:w-[166px]  ">
                     <p className="font-raleway font-normal text-[14px] lg:text-[18px] text-white">
                       03
                     </p>
@@ -249,11 +158,12 @@ export const OurServices = () => {
 
                   {/* Arrow Icon */}
                   <img
-                    src={RoundWithArrow}
+                    src={
+                      openDropdown === "Process" ? RoundArrow : RoundWithArrow
+                    }
                     alt="Arrow Icon"
-                    className={`w-[25px] sm:w-[30px] cursor-pointer transition-transform duration-300 ${
-                      openDropdown === "Process" ? "rotate-180" : ""
-                    }`}
+                    className={`w-[25px] sm:w-[30px] cursor-pointer transition-transform duration-300 
+                `}
                     onClick={() => toggleDropdown("Process")}
                   />
                 </div>
@@ -278,11 +188,11 @@ export const OurServices = () => {
               />
 
               {/* Service Row 4 */}
-              <div className="flex flex-col items-center justify-center w-full">
+              <div className="flex flex-col items-center justify-center w-full mt-4">
                 {/* Dropdown header */}
                 <div className="flex items-center justify-between w-full h-auto p-3 lg:px-10 gap-2 ">
                   {/* Left section (Number + Title) */}
-                  <div className="flex items-center justify-between w-[200px] lg:w-[315px] lg:pl-2 ">
+                  <div className="flex items-center justify-between w-[253px] lg:w-[315px] lg:pl-2 ">
                     <p className="font-raleway font-normal text-[14px] lg:text-[18px] text-white">
                       04
                     </p>
@@ -293,13 +203,14 @@ export const OurServices = () => {
 
                   {/* Arrow Icon */}
                   <img
-                    src={RoundWithArrow}
-                    alt="Arrow Icon"
-                    className={`w-[25px] sm:w-[30px] cursor-pointer transition-transform duration-300 ${
+                    src={
                       openDropdown === "Mobile App Development"
-                        ? "rotate-180"
-                        : ""
-                    }`}
+                        ? RoundArrow
+                        : RoundWithArrow
+                    }
+                    alt="Arrow Icon"
+                    className={`w-[25px] sm:w-[30px] cursor-pointer transition-transform duration-300 
+                   `}
                     onClick={() => toggleDropdown("Mobile App Development")}
                   />
                 </div>

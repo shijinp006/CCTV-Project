@@ -1,15 +1,15 @@
-import SoftWareImage from "../assets/SoftWare.webp";
-import DesignImage from "../assets/DesignImage.webp";
-import CCTVImage from "../assets/CCTVImage.webp";
-import EnterpriseNetworking from "../assets/Enterprisenetworking.webp"
-import CCTVInstallation from "../assets/cctv installation.webp"
-import ServerManagement from "../assets/Server Management.webp"
-import RequirementAnalysis from "../assets/Requirement Analysis.webp"
-import ProcessDesign from "../assets/Process Design.webp"
-import Implementation from "../assets/Implementation.webp"
-import iOSAppDevelopment from "../assets/iOS App Development.webp"
-import AndroidAppDevelopment from "../assets/Android App Development.webp"
-import CrossPlatformApps from "../assets/Cross-Platform Apps.webp"
+import SoftWareImage from "../../public/SoftWare.webp";
+import DesignImage from "../../public/DesignImage.webp";
+import CCTVImage from "../../public/CCTVImage.webp";
+import EnterpriseNetworking from "../../public/Enterprisenetworking.webp";
+import CCTVInstallation from "../../public/cctv installation.webp";
+import ServerManagement from "../../public/Server Management.webp";
+import RequirementAnalysis from "../../public/Requirement Analysis.webp";
+import ProcessDesign from "../../public/Process Design.webp";
+import Implementation from "../../public/Implementation.webp";
+import iOSAppDevelopment from "../../public/iOS App Development.webp";
+import AndroidAppDevelopment from "../../public/Android App Development.webp";
+import CrossPlatformApps from "../../public/Cross-Platform Apps.webp";
 export const EntrepriseService = [
   {
     id: 1,
